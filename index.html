@@ -1,8 +1,15 @@
+<!-- Pendeklarasilan tipe dokumen berupa html -->
+<!DOCTYPE html>
+<!--Pembungkus dokumen html-->
 <html>
+    <!--Berisi metadata dan elemen-elemen yang tidak ditampilkan di halaman utama-->
     <head>
+        <!--Judul dari halaman berupa teks "Data Kebumen"-->
         <title>Data Kebumen</title>
+        <!--<style> adalah tag HTML yang digunakan untuk menuliskan CSS (Cascading Style Sheets), 
+            yaitu kode untuk mengatur tampilan website, seperti warna, ukuran tulisan, latar belakang, dan tata letak. Layout yang digunakan bermargin 0 dan padding 0 serta menggunakan box shadow yang berisikan teks yang ditampilkan dengan font yang sesuai. Pada bagian body, bacground yang digunkan ialah linear-gradient dengan transparansi rendah serta gambar dari url "banjir-kebumen.webp". Font yang ada pada bagian ini menggunakan Arial dan sans-serif. Pada bagian header, bacground yang digunakan ialah warna hijau dengan teks yang berada di dalamnya bagian tengah dan font-nya berwarna putih. Pada bagian header image, ukuran lebarnya 50px, tingginya 50px, dan margin kanan 10px. Pada bagian container, background yang digunakan ialah warna putih dengan transparansi 25%. Container ialah wadah untuk menampung, mengelompokkan, atau mengatur elemen lain. Adapun format dari box yang akan menjadi wadah teks ialah tampilannya berupa inline-block dengan ketinggian 100px dan lebar 600px. Ketika box diklik, box akan mengalami transisi selama 0.3 detik.-->
         <style>
-            * {
+            *{
                 margin:0;
                 padding:0;
                 box-sizing: border-box;
@@ -47,22 +54,34 @@
                 transition: background-color 0.3s ease;
             }
         </style>
+        <!--menutup tag style-->
     </head>
+    <!--menutup tag head-->
 
+    <!--Berisi konten utama dari halaman web yang akan ditampilkan kepada pengguna-->
     <body>
+        <!--Sub kelas header-->
         <div class="header">
+            <!--Menampilkan teks heading 1 "KEBUMEN PUNYA DATA" pada posisi tengah-->
             <center>
                 <h1> KEBUMEN PUNYA DATA</h1>
             </center>
+            <!--Menampilkan teks paragraf tentang portal informasi dan data Kabupaten Kebumen-->
             <p> Portal informasi dan data Kabupaten Kebumen
             </p>
+        <!--menutup tag div-->
         </div>
+        <!--Sub kelas container-->
         <div class="container">
+            <!--Menampilkan tombol menuhujan.html dalam bentuk box dengan nama alias "Data Curah Hujan" serta pada posisi tengah-->
              <center>
                 <a href="menuhujan.html" class="box">
                     <h2>Data Curah Hujan</h2> 
                 </a>
              </center>
+        <!--menutup tag div-->
         </div>
+    <!--menutup tag body-->
     </body>
+    <!--menutup tag html-->
 </html>
