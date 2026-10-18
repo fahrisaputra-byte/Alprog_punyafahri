@@ -1,170 +1,257 @@
-<!DOCTYPE html>
-<html>
-		<title>
-		Curah Hujan Kebumen 2021
-	</title>
-	<head>
-		<title> Data Curah Hujan Kebumen 2021</title>
+ 
+<!--Pendeklarasial tipe dokumen berupa html -->
+ <!DOCTYPE html>
+
+ <!-- <html> bermaksud bagian awal dari dokumen HTML -->                     -->
+ <html>
+	 	<!-- TAG <head> berisi metadata, judul, style, dan elemen yang tampil di halaman     -->
+	 	<head>
+		<!-- TAG <title> merupakan judul yang tampil di tab browser -->
+		<title>Curah Hujan Kebumen 2021</title>
+		<!-- TAG <style> merupakan tempat menulis CSS internal      --> 
 		<style>
+			/* Mengatur gaya untuk seluruh body halaman */
 			body {
-				background-color: #f2f2f288;
-				font-family: Arial, sans-serif;
-				margin: 0;
-				padding: 0;
+				background-color: #f2f2f288;   /* warna latar abu-abu muda */
+				font-family: Arial, sans-serif; /* jenis huruf */
+				margin: 0;    /* hilangkan jarak luar */
+				padding: 0;     /* hilangkan jarak dalam */
 			}
+
+			/* Gaya untuk bagian header (judul atas) */
 			.header {
-				background-color: #4CAF50;
-				color: white;
-				padding: 20px;
-				text-align: center;	
+				background-color: #4CAF50;      /* latar hijau */
+				color: white;         /* teks putih */
+				padding: 20px;        /* jarak dalam 20px */
+				text-align: center;    /* teks rata tengah */
 			}
+
+			/* Gaya untuk gambar di dalam header */
 			.header img {
-				width: 70px;
-				height: 100px;
-				margin-right: 60px;
+				width: 70px;     /* lebar gambar */
+				height: 100px;     /* tinggi gambar */
+				margin-right: 60px;      /* jarak kanan gambar */
 			}
+
+			/* Gaya untuk wadah utama konten */
 			.container {
-				width: 80%;
-				margin: 20px auto;
-				background-color: #fff;
-				padding: 20px;
+				width: 80%;        /* lebar 80% dari layar */
+				margin: 20px auto;          /* auto = rata tengah */
+				background-color: #fff;         /* latar putih */
+				padding: 20px;          /* jarak dalam */
 			}
+
+			/* Gaya untuk elemen dengan class background image */
 			.background image {
-				background-color: #f2f2f243;
-				background-image: url("banjir-kebumen.webp");
-				background-size: cover;
+				background-color: #f2f2f243; /* warna latar abu-abu muda */
+				background-image: url("banjir-kebumen.webp"); /* gambar latar */
+				background-size: cover;   /* gambar menutupi area */
 			}
+
+			/* Gaya dasar tabel */
 			.table {
-				width: 100%;
-				border-collapse: collapse;
-				margin: 0 auto;
+				width: 100%;       /* lebar penuh */
+				border-collapse: collapse;      /* garis tabel menyatu */
+				margin: 0 auto;         /* rata tengah */
 			}
+
+			/* Gaya untuk header dan sel tabel */
 			.table th, .table td {
-				border: 1px solid black;
+				border: 1px solid black;      /* garis hitam 1px */
 				border-collapse: collapse;
-				padding: 8px;
-				text-align: center;
+				padding: 8px;       /* jarak dalam sel */
+				text-align: center;      /* teks rata tengah */
 			}
+
+			/* Warna baris genap (zebra stripe) */
 			.table tr:nth-child(even) {
 				text-align: center;
-				background-color: #4CAF50;
+				background-color: #4CAF50;      /* hijau */
 				color: white;
 			}
+
+			/* Warna saat baris disorot mouse */
 			.table tr:hover {
-				background-color: #ddd;
+				background-color: #ddd;         /* abu terang */
 				color: black;
 			}
+
+			/* Warna khusus baris PERTAMA (header tabel) */
 			.table tr:first-child {
-				background-color: #056e21;
+				background-color: #056e21;      /* hijau tua */
 				color: white;
 			}
+
+			/* Warna khusus baris TERAKHIR (total tahunan) */
 			.table tr:last-child {
-				background-color: #056e21;
+				background-color: #056e21;      /* hijau tua */
 				color: white;
+			}
+			/* Gaya untuk bagian footer (bawah halaman) */
+			.footer {
+				background-color: #4CAF50; /* latar hijau */
+				color: white;/* teks putih */
+				padding: 10px;
+				text-align: center;/* teks rata tengah */
 			}
 		</style>
 	</head>
+
+	 
+	<!-- TAG <body> berisi semua konten yang TAMPIL di halaman browser -->
+	 
 	<body>
+
+		<!-- Bagian header: judul utama halaman -->
 		<div class="header">
 			<h1>Curah Hujan Kebumen 2021</h1>
 		</div>
+
+		<!-- Bagian header tambahan: menampilkan logo Kabupaten Kebumen -->
 		<div class="header image">
 			<img src="LOGO_KABUPATEN_KEBUMEN.png" alt="Logo Kabupaten Kebumen">
 		</div>
+
+		<!-- Wadah utama untuk deskripsi dan tabel data -->
 		<div class="container">
+
+			<!-- Paragraf deskripsi singkat tentang data -->
 			<p class="deskripsi">
 				Data curah hujan di Kabupaten Kebumen tahun 2021
 			</p>
+
+			<!-- Tabel data curah hujan -->
 			<table border="1" class="table">
+
+				<!-- Judul / keterangan tabel -->
 				<caption>
 					<b> Tabel Curah Hujan Kabupaten Kebumen 2021 </b>
 				</caption>
+
+				<!-- TAG <center> berguna untuk menengahkan isi tabel -->
 				<center>
+
+					<!-- Baris header tabel berisi nama-nama kolom -->
 					<tr>
-						<th> No </th>
-						<th> Bulan</th>
-						<th> Curah Hujan (mm) </th>
-						<th> Hari Hujan </th>
+						<th>No</th>                 <!-- kolom nomor -->
+						<th>Bulan</th>              <!-- kolom bulan -->
+						<th>Curah Hujan (mm)</th>   <!-- kolom curah hujan -->
+						<th>Hari Hujan</th>         <!-- kolom hari hujan -->
 					</tr>
+
+					<!-- Baris data bulan Januari -->
 					<tr>
 						<td>1</td>
 						<td>Januari</td>
 						<td>604</td>
 						<td>23</td>
 					</tr>
+
+					<!-- Baris data bulan Februari -->
 					<tr>
 						<td>2</td>
 						<td>Februari</td>
 						<td>363</td>
 						<td>20</td>
 					</tr>
+
+					<!-- Baris data bulan Maret -->
 					<tr>
 						<td>3</td>
 						<td>Maret</td>
 						<td>898</td>
 						<td>23</td>
 					</tr>
+
+					<!-- Baris data bulan April -->
 					<tr>
 						<td>4</td>
 						<td>April</td>
 						<td>857</td>
 						<td>12</td>
 					</tr>
+
+					<!-- Baris data bulan Mei -->
 					<tr>
 						<td>5</td>
 						<td>Mei</td>
 						<td>149</td>
 						<td>6</td>
 					</tr>
+
+					<!-- Baris data bulan Juni -->
 					<tr>
 						<td>6</td>
 						<td>Juni</td>
 						<td>395</td>
 						<td>12</td>
 					</tr>
+
+					<!-- Baris data bulan Juli -->
 					<tr>
 						<td>7</td>
 						<td>Juli</td>
 						<td>88</td>
 						<td>4</td>
 					</tr>
+
+					<!-- Baris data bulan Agustus -->
 					<tr>
 						<td>8</td>
 						<td>Agustus</td>
 						<td>42</td>
 						<td>7</td>
 					</tr>
+
+					<!-- Baris data bulan September -->
 					<tr>
 						<td>9</td>
 						<td>September</td>
 						<td>180.5</td>
 						<td>14</td>
 					</tr>
+
+					<!-- Baris data bulan Oktober -->
 					<tr>
 						<td>10</td>
 						<td>Oktober</td>
 						<td>294</td>
 						<td>18</td>
 					</tr>
+
+					<!-- Baris data bulan November -->
 					<tr>
 						<td>11</td>
 						<td>November</td>
 						<td>482</td>
 						<td>26</td>
 					</tr>
-					<tr>					
+
+					<!-- Baris data bulan Desember -->
+					<tr>
 						<td>12</td>
 						<td>Desember</td>
 						<td>426.7</td>
 						<td>27</td>
-					</tr>															
+					</tr>
+
+					<!-- Baris total tahunan -->
+					<!-- colspan="2" berarti  bahwa sel ini menggabungkan 2 kolom (No + Bulan) -->
 					<tr>
 						<td colspan="2">Tahunan</td>
 						<td>4548</td>
 						<td>223</td>
 					</tr>
+
 				</center>
 			</table>
 		</div>
+		<!-- Bagian footer yang menampilkan hak cipta dan sumber data -->
+		<div class="footer">
+			<!-- &copy; = simbol © (copyright) -->
+			<p>&copy; 2023 Data Curah Hujan Kebumen</p>
+			<p>Sumber Data: Satudata Kebumen</p>
+		</div>
+	</body>
 	</body>
 </html>
